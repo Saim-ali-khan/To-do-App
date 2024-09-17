@@ -1,81 +1,84 @@
-*{
-    /* border:1px solid red; */
+* {
+  /* border:1px solid red; */
 }
 
 body > div {
   width: 50%;
   margin: 0 auto;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body > div > header {
-    padding:20px;
-    text-align: center;
-    font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
 }
-#search{
-    margin:10px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: orange;
-    
+#search {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: orange;
 }
-#search>input{
-    caret-color: orange;
-    font-size: 22px; 
-    padding:12px;
-    background-color: transparent;
-    width: 100%;
-    background-color: white;
-    border:3px solid orange;
-}
-#search>input:hover,#search>input:focus{
-    outline: none;
-    border:3px solid orange;
-    
-    
-
-}
-#search>input::placeholder{
-    color:rgba(255, 166, 0, 0.5);
-}
-#search>button{
-    border:3px solid orange;
-    color: white;
-    font-size: 22px; 
-    padding:  12px;
-    margin: none;
-    background-color: orange;
-    color:white;
-}
-#search>button:hover{
-    background-color: orange;
-    opacity: 0.75;
-}
-
-#lists {
+#search > input {
+  caret-color: orange;
+  font-size: 22px;
+  padding: 12px;
+  background-color: transparent;
+  width: 100%;
+  background-color: white;
   border: 3px solid orange;
 }
+#search > input:hover,
+#search > input:focus {
+  outline: none;
+  border: 3px solid orange;
+}
+
+#search > button {
+  border: 3px solid orange;
+  color: white;
+  font-size: 22px;
+  padding: 12px;
+  margin: none;
+  background-color: orange;
+  color: white;
+}
+#search > button:hover {
+  background-color: orange;
+  opacity: 0.75;
+}
+
+
 .lst {
+    margin: 10px 0px;
+  border: 2px solid orange;
   display: flex;
   flex-direction: row;
 }
-.lst>div{
+.lst > div {
+  font-size: 18px;
+  padding: 10px;
+}
+.lst > input {
+  margin-left: 20px;
+}
+.lst > input:checked ~ div {
+  text-decoration: line-through;
+  color: grey;
+}
+.lst>button{
+    margin-left: auto;
     font-size: 18px;
     padding:10px;
+    border:1px solid orange;
+    background-color: orange;
+    color:white;
 }
-.lst>input{
-    margin-left: 20px;
-    font-size: 18px;
-    background-color: aqua;
+.lst>button:hover{
+    background-color: rgba(255, 166, 0, 0.8);
 }
-.lst>input:checked ~ div{
-    text-decoration: line-through;
-    color:grey;
-}
-@media screen and (max-width:768px) {
-    body>div{
-        width:90%;
-    }
+@media screen and (max-width: 768px) {
+  body > div {
+    width: 90%;
+  }
 }
